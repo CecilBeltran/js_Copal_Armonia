@@ -1,0 +1,86 @@
+/*quienes somos*/
+.box__somos { 
+display:block;    
+    .box__quienes { 
+    max-width: 1200px;
+    max-height: 100%;
+    margin-top: 60px;
+    display: flex;
+        .fondo__quienes { 
+        background-image: url(../img_3_FOTO_COPAL.JPG);
+        filter: opacity(15%);
+        position: absolute;    
+        box-sizing: content-box;
+        max-width: 1200px; 
+        max-height: 600px; 
+            .imagen__fondo__quienes {
+            height: 100%; 
+            }
+        }
+        #reseña {
+        display: flex;
+        outline: seagreen 2px; 
+        max-width: 400px;
+        max-height: auto;
+        font-family:'Roboto Flex', sans-serif ;
+        text-align: center;
+        font-weight: 300;
+        justify-content: center;
+        flex-grow: 1;
+        line-height: normal;
+            & p {
+            top: $spacing-large;  
+            text-align: justify; 
+            width: 100%; 
+            display: inline-block;
+            margin: $spacing-large;
+            font-size: $text-large; 
+            }
+        }
+        .video {
+        justify-content: right; 
+        box-sizing: border-box; 
+        max-width: 500px; 
+        max-height: 400px; 
+        object-fit: cover;
+            video { width: 100%; 
+            height: 100%; 
+        }
+    }
+}
+    .contenedor__quienes { 
+    margin-top:50px; 
+    max-width: 1200px;
+    max-height: 100%;
+        .box__pag {
+        display: flex;
+            .box__pag__quienes img{
+            max-width: 100% ;
+            max-height: 400px;
+                .box__pag__quienes { 
+                width: 50%;
+                height: 100%;
+                }
+            }
+            .box__pag__naturaleza{
+            filter: brightness(1.1);
+            mix-blend-mode: multiply;
+            margin-left: 15%;
+            }
+            .box__info__quienes { 
+            margin: 30px;
+                .box__title { 
+                margin-top: 50px;
+                font-size: 35px;
+                color: $text-primary ;
+                }
+                .box__text { 
+                margin-top: 50px;
+                text-align: center;
+                margin-bottom: 70px;
+                font-size: 30px;
+                color: $text-alternative;}
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+/*sahumadores*/
+.sahumadores__galeria { 
+display: flex; 
+flex-wrap: wrap;
+max-width: 1200px;
+height: 100%;
+margin-bottom: $spacing-large;
+    .imagen__incienso { 
+    margin-left: 12px;
+    max-width: 1200px;
+    height: 100%; 
+    display: strech;
+    background-image: url(../IMAGENES/gradiente.png);
+    filter: opacity(50%);
+    position: absolute; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+        .imagen__incienso__fondo {
+        width: 1169px;
+        height: 100%;
+    }
+}
+    .galeria{  
+    margin-left: 12px;
+    height:auto auto;
+    position: relative; 
+    display: flex; 
+    flex-wrap: wrap;
+    flex-grow: 1 ;  
+    max-width: 1200px;
+    max-height: 100%;
+    align-content: stretch;
+    scroll-behavior: smooth;    
+        &__card {
+        width: 380px;
+        height: 400px;
+        text-align: center;
+        padding: $spacing-xsmall;
+        margin: $spacing-xsmall;
+        margin-bottom: $spacing-large;
+        display: inline-block; 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: $text-medium; 
+        font-weight: 300; 
+        color:$text-color;
+        justify-content: center;
+        align-content: center; 
+        box-sizing: border-box; 
+        background-color: rgb(248 ,237 ,223 );
+            .boton__comprar { 
+            background-color:$color-btn;
+            color: $text-color;
+            border: #f5f8f5;
+            padding: $spacing-small;
+                &:hover {
+                border: 2px solid #353048;
+                }
+            }
+        } 
+            img {
+            width: 350px;
+            height: 250px;
+            }
+            p { 
+            margin: 0px;
+            padding-top: $spacing-xsmall;
+            padding-bottom: $spacing-xsmall;
+            height: auto;
+            }
+        }     
+    }  

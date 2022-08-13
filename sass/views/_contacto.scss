@@ -1,0 +1,57 @@
+/*contacto*/
+.box__contacto {
+position: relative; 
+margin-bottom: $spacing-medium;
+margin-top: $spacing-medium;
+align-content: space-around; 
+justify-content: center;
+max-width: 1200px;
+max-height: 100%;
+@include flex (row, center, 100px);
+    .box__form {
+    margin: auto; 
+    width: 300px;
+    height: 100%;
+    background-color: rgb(130, 128, 128);
+    padding: $spacing-small $spacing-medium;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: $spacing-small;  
+    margin-bottom: $spacing-large;
+        input, textarea {  
+        width: 100%;
+        margin-bottom: $spacing-medium;
+        padding: 7px;
+        }
+        textarea { 
+        max-height: 100px; 
+        }
+        .boton__contacto { 
+        background: #648565;
+        padding: $spacing-small;
+        width: 100%;
+        margin: $spacing-xsmall;
+        }
+        .btn--enviar{
+        @extend .boton__contacto;
+        background-color: map-get($color, btn_enviar );
+            &:hover { 
+            background-color: rgb(172, 233, 172)}
+            }
+            .btn--borrar{
+            @extend .boton__contacto;
+            background-color: map-get($color, btn_borrar );
+                &:hover {background-color: #ebe7ac; }
+                }
+            }
+    .box__mapa { 
+    margin-top: 50px; 
+    margin-right: 80px;
+    height: 100%;      
+    }
+}
+  
+   
+   
+   
+  

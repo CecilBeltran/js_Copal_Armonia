@@ -1,0 +1,38 @@
+header {
+display: flex ;
+align-items: center; 
+justify-content: space-between;
+font-family: 'Roboto Flex', sans-serif;
+max-width: 1200px; 
+max-height: 100%;
+background-color:#d8e2dc ;
+/*background-color: #81b29a;*/
+    .navbar-expand-lg  { 
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; 
+    font-size: $text-medium;
+    max-height: 100%; 
+        #doble { 
+        width: 180px;
+        }
+        .navbar-brand img { width: 200px; margin-right: 100px;
+        }
+        .nav-item a {
+        color: $text-color; 
+            &:hover { 
+            color: $color-btn;
+            }
+        }
+        .btn {
+        color: black;
+        border: none;
+        background-color: $color-btn;
+            &:hover { color: bisque;
+            border: solid bisque;
+            }
+        }
+    }
+}
+
+
+     

@@ -1,0 +1,33 @@
+/*VARIABLES*/
+ /*font size*/
+
+$text-large: 30px;
+$text-medium: 20px;
+$text-small: 12px;
+$text-xsmall: 5px;
+
+/*spacing*/
+
+$spacing-large: 50px;
+$spacing-medium: 20px;
+$spacing-small: 10px;
+$spacing-xsmall: 5px;
+
+$spacing : (
+    spacing-large: 50px,
+    spacing-medium: 20px,
+    spacing-small: 10px,
+    spacing-xsmall: 5px,
+);
+
+
+/*colors*/
+$text-primary: rgba(72, 105, 72, 0.877);  
+$text-alternative:  rgb(16, 96, 16);
+$text-color:black;
+$base:   #E9C46A;
+$color-btn: rgb(87, 117, 144);
+$color: (
+    btn_enviar: rgba(82, 140, 82, 0.555),
+    btn_borrar: rgba(238, 204, 91, 0.543),
+);

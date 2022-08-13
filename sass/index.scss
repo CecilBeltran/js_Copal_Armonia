@@ -1,0 +1,20 @@
+          /* MISC*/ 
+@import'./misc/_variables.scss';
+@import'./misc/_normalize.scss';
+@import'./misc/_mixins.scss';
+
+        /* PARTIALS*/
+@import'./partials/_header.scss';
+@import'./partials/_footer.scss';
+
+            /* VIEWS */
+@import'./views/_home.scss';
+@import'./views/_quienes_somos.scss';
+@import'./views/_contacto.scss';
+@import'./views/_sahumadores.scss';
+@import'./views/_inciensos.scss';
+
+ /* MISC*/
+@import'./misc/_animaciones.scss';
+@import'./misc/_media_queries.scss';
+

@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* MISC*/
+/*VARIABLES*/
+/*font size*/
+/*spacing*/
+/*colors*/
+/*NORMALIZE*/
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1200px;
+  max-height: 100%; }
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  padding: 0; }
+
+h1 {
+  font-weight: 800;
+  font-size: 40;
+  text-align: end;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  height: 20px;
+  width: 100%; }
+
+h2 {
+  color: black;
+  text-align: center;
+  margin: 0;
+  font-size: 35;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+main {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1200px;
+  max-height: 100%;
+  margin-top: 80px; }
+
+video {
+  width: 100%;
+  height: 100%; }
+
+/* PARTIALS*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto Flex', sans-serif;
+  max-width: 1200px;
+  max-height: 100%;
+  background-color: #d8e2dc;
+  /*background-color: #81b29a;*/ }
+  header .navbar-expand-lg {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    font-size: 20px;
+    max-height: 100%; }
+    header .navbar-expand-lg #doble {
+      width: 180px; }
+    header .navbar-expand-lg .navbar-brand img {
+      width: 200px;
+      margin-right: 100px; }
+    header .navbar-expand-lg .nav-item a {
+      color: black; }
+      header .navbar-expand-lg .nav-item a:hover {
+        color: #577590; }
+    header .navbar-expand-lg .btn {
+      color: black;
+      border: none;
+      background-color: #577590; }
+      header .navbar-expand-lg .btn:hover {
+        color: bisque;
+        border: solid bisque; }
+
+footer {
+  height: 170px; }
+  footer .anuncio {
+    display: flex;
+    max-height: 20px;
+    max-width: 1200px;
+    background-color: #E9C46A;
+    font-size: medium; }
+  footer .menu__iconos__redes {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1175px;
+    max-height: 130px; }
+    footer .menu__iconos__redes .icono__redes {
+      width: 30px;
+      height: 30px;
+      margin: 25px;
+      row-gap: 10px; }
+
+/* VIEWS */
+/*home*/
+#pag__home {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: inline-block; }
+  #pag__home .contenedor__carrousel {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 100px;
+    align-content: flex-start; }
+    #pag__home .contenedor__carrousel #carouselExampleSlidesOnly {
+      margin-right: 50px;
+      width: 100%;
+      height: 80%; }
+    #pag__home .contenedor__carrousel .texto {
+      color: black;
+      margin: 5px;
+      font-weight: 600;
+      max-width: 100%;
+      flex-wrap: wrap;
+      -webkit-text-size-adjust: 100%;
+      max-height: 400px; }
+      #pag__home .contenedor__carrousel .texto p {
+        align-content: center;
+        height: 80px;
+        top: 20%;
+        margin: 40px;
+        margin-top: 80px;
+        font-size: 30px; }
+  #pag__home #cards {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px; }
+  #pag__home .box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 clamp(300px, 30%, 400px);
+    margin-top: 0; }
+    #pag__home .box__img {
+      width: 100%;
+      height: 100%; }
+      #pag__home .box__img img {
+        width: 380px;
+        height: 270px; }
+  #pag__home .box__info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px; }
+    #pag__home .box__info .box__subtitle {
+      margin-top: .6rem;
+      color: #106010;
+      font-size: 20px; }
+    #pag__home .box__info .box__text {
+      margin-top: 1rem;
+      color: rgba(72, 105, 72, 0.877);
+      font-size: 15px; }
+
+/*quienes somos*/
+.box__somos {
+  display: block; }
+  .box__somos .box__quienes {
+    max-width: 1200px;
+    max-height: 100%;
+    margin-top: 60px;
+    display: flex; }
+    .box__somos .box__quienes .fondo__quienes {
+      background-image: url(../img_3_FOTO_COPAL.JPG);
+      filter: opacity(15%);
+      position: absolute;
+      box-sizing: content-box;
+      max-width: 1200px;
+      max-height: 600px; }
+      .box__somos .box__quienes .fondo__quienes .imagen__fondo__quienes {
+        height: 100%; }
+    .box__somos .box__quienes #reseña {
+      display: flex;
+      outline: seagreen 2px;
+      max-width: 400px;
+      max-height: auto;
+      font-family: 'Roboto Flex', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      justify-content: center;
+      flex-grow: 1;
+      line-height: normal; }
+      .box__somos .box__quienes #reseña p {
+        top: 50px;
+        text-align: justify;
+        width: 100%;
+        display: inline-block;
+        margin: 50px;
+        font-size: 30px; }
+    .box__somos .box__quienes .video {
+      justify-content: right;
+      box-sizing: border-box;
+      max-width: 500px;
+      max-height: 400px;
+      object-fit: cover; }
+      .box__somos .box__quienes .video video {
+        width: 100%;
+        height: 100%; }
+  .box__somos .contenedor__quienes {
+    margin-top: 50px;
+    max-width: 1200px;
+    max-height: 100%; }
+    .box__somos .contenedor__quienes .box__pag {
+      display: flex; }
+      .box__somos .contenedor__quienes .box__pag .box__pag__quienes img {
+        max-width: 100%;
+        max-height: 400px; }
+        .box__somos .contenedor__quienes .box__pag .box__pag__quienes img .box__pag__quienes {
+          width: 50%;
+          height: 100%; }
+      .box__somos .contenedor__quienes .box__pag .box__pag__naturaleza {
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        margin-left: 15%; }
+      .box__somos .contenedor__quienes .box__pag .box__info__quienes {
+        margin: 30px; }
+        .box__somos .contenedor__quienes .box__pag .box__info__quienes .box__title {
+          margin-top: 50px;
+          font-size: 35px;
+          color: rgba(72, 105, 72, 0.877); }
+        .box__somos .contenedor__quienes .box__pag .box__info__quienes .box__text {
+          margin-top: 50px;
+          text-align: center;
+          margin-bottom: 70px;
+          font-size: 30px;
+          color: #106010; }
+
+/*contacto*/
+.box__contacto {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-content: space-around;
+  justify-content: center;
+  max-width: 1200px;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px; }
+  .box__contacto .box__form {
+    margin: auto;
+    width: 300px;
+    height: 100%;
+    background-color: #828080;
+    padding: 10px 20px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 50px; }
+    .box__contacto .box__form input, .box__contacto .box__form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px; }
+    .box__contacto .box__form textarea {
+      max-height: 100px; }
+    .box__contacto .box__form .boton__contacto, .box__contacto .box__form .btn--enviar, .box__contacto .box__form .btn--borrar {
+      background: #648565;
+      padding: 10px;
+      width: 100%;
+      margin: 5px; }
+    .box__contacto .box__form .btn--enviar {
+      background-color: rgba(82, 140, 82, 0.555); }
+      .box__contacto .box__form .btn--enviar:hover {
+        background-color: #ace9ac; }
+    .box__contacto .box__form .btn--borrar {
+      background-color: rgba(238, 204, 91, 0.543); }
+      .box__contacto .box__form .btn--borrar:hover {
+        background-color: #ebe7ac; }
+  .box__contacto .box__mapa {
+    margin-top: 50px;
+    margin-right: 80px;
+    height: 100%; }
+
+/*sahumadores*/
+.sahumadores__galeria {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: 100%;
+  margin-bottom: 50px; }
+  .sahumadores__galeria .imagen__incienso {
+    margin-left: 12px;
+    max-width: 1200px;
+    height: 100%;
+    display: strech;
+    background-image: url(../IMAGENES/gradiente.png);
+    filter: opacity(50%);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .sahumadores__galeria .imagen__incienso .imagen__incienso__fondo {
+      width: 1169px;
+      height: 100%; }
+  .sahumadores__galeria .galeria {
+    margin-left: 12px;
+    height: auto auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 1200px;
+    max-height: 100%;
+    align-content: stretch;
+    scroll-behavior: smooth; }
+    .sahumadores__galeria .galeria__card {
+      width: 380px;
+      height: 400px;
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+      margin-bottom: 50px;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      justify-content: center;
+      align-content: center;
+      box-sizing: border-box;
+      background-color: #f8eddf; }
+      .sahumadores__galeria .galeria__card .boton__comprar {
+        background-color: #577590;
+        color: black;
+        border: #f5f8f5;
+        padding: 10px; }
+        .sahumadores__galeria .galeria__card .boton__comprar:hover {
+          border: 2px solid #353048; }
+    .sahumadores__galeria .galeria img {
+      width: 350px;
+      height: 250px; }
+    .sahumadores__galeria .galeria p {
+      margin: 0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: auto; }
+
+/*inciensos*/
+.inciensos__galeria {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  height: 100%;
+  margin-top: 50px; }
+  .inciensos__galeria .imagen__incienso {
+    margin-left: 12px;
+    max-width: 1200px;
+    height: 100%;
+    display: strech;
+    background-image: url(../IMAGENES/gradiente.png);
+    filter: opacity(50%);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .inciensos__galeria .imagen__incienso .imagen__incienso__fondo {
+      width: 1169px;
+      height: 100%; }
+  .inciensos__galeria .galeria {
+    margin-left: 12px;
+    height: auto auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 1200px;
+    max-height: 100%;
+    align-content: stretch;
+    scroll-behavior: smooth; }
+    .inciensos__galeria .galeria__card {
+      width: 380px;
+      height: 400px;
+      text-align: center;
+      padding: 5px;
+      margin: 5px;
+      margin-bottom: 50px;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      justify-content: center;
+      align-content: center;
+      box-sizing: border-box;
+      background-color: #f8eddf; }
+      .inciensos__galeria .galeria__card .boton__comprar {
+        background-color: #577590;
+        color: black;
+        border: #f5f8f5;
+        padding: 10px; }
+        .inciensos__galeria .galeria__card .boton__comprar:hover {
+          border: 2px solid #353048; }
+      .inciensos__galeria .galeria__card img {
+        width: 350px;
+        height: 250px; }
+      .inciensos__galeria .galeria__card p {
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto; }
+
+/* MISC*/
+/*ANIMACIONES*/
+#reseña {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s; }
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 200px;
+    top: 0px; }
+  50% {
+    left: 200px;
+    top: 200px; }
+  75% {
+    left: 0px;
+    top: 200px; }
+  100% {
+    left: 0px;
+    top: 0px; } }
+
+.anuncio span {
+  animation-duration: 5s; }
+
+/*media queries*/
+@media screen and (max-width: 1160px) {
+  .galeria {
+    margin-left: 150px; } }
+
+@media screen and (max-width: 1000px) {
+  .inciensos__galeria {
+    max-width: 800px; }
+    .inciensos__galeria .imagen__incienso__fondo {
+      max-width: 800px; }
+  .sahumadores__galeria {
+    max-width: 800px; }
+    .sahumadores__galeria .imagen__incienso__fondo {
+      max-width: 800px; }
+  .galeria {
+    margin-left: 90px; }
+  .galeria__card {
+    margin: 5%;
+    margin-left: 10%;
+    flex-basis: 300px;
+    width: 60%;
+    height: 60%; }
+  .imagen__fondo .marca__de__agua__img {
+    height: 100%; }
+  .img__fondo__quienes {
+    display: none; } }
+
+@media screen and (max-width: 900px) {
+  body {
+    max-width: 800px;
+    max-height: 100%; }
+  main {
+    max-width: 800px;
+    max-height: 100%; }
+  .box__contacto {
+    display: block; }
+  #pag__home {
+    margin: 0; }
+    #pag__home .contenedor__carrousel {
+      display: block;
+      max-width: 800px; }
+      #pag__home .contenedor__carrousel .texto {
+        width: 100%; }
+        #pag__home .contenedor__carrousel .texto p {
+          font-size: 20px;
+          box-sizing: border-box;
+          height: 100%;
+          width: 70%; }
+      #pag__home .contenedor__carrousel .carousel {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        margin-right: 0px; }
+  .box__quienes {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%; }
+    .box__quienes #reseña {
+      margin-top: 10px;
+      max-width: 75%;
+      height: 50%;
+      font-size: 5px; }
+      .box__quienes #reseña p {
+        font-size: 20px;
+        margin: 5%;
+        max-width: 50%x;
+        height: 50%;
+        overflow: scroll; }
+  .box__pag {
+    flex-direction: column; }
+    .box__pag .box__pag__naturaleza {
+      margin-right: 20px; }
+  .inciensos__galeria {
+    max-width: 600px; }
+    .inciensos__galeria .imagen__incienso__fondo {
+      max-width: 600px; }
+  .sahumadores__galeria {
+    max-width: 600px; }
+    .sahumadores__galeria .imagen__incienso__fondo {
+      max-width: 600px; }
+  .box__pag {
+    max-width: 100%;
+    margin: 0px; }
+    .box__pag img {
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .box__pag .box__text {
+      font-size: 12px; }
+      .box__pag .box__text p {
+        font-size: 5px;
+        box-sizing: border-box;
+        padding: 1%;
+        margin: 0px; }
+  footer {
+    max-width: 800px;
+    max-height: 70px; } }
+
+@media screen and (max-width: 750px) {
+  .galeria__card img {
+    width: 200px; } }
+
+@media screen and (max-width: 640px) {
+  .texto p {
+    font-size: 5px; }
+  .video {
+    width: 100%;
+    height: 100%; }
+  h1 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 450px) {
+  .carousel {
+    max-width: 100%;
+    margin: 10px; }
+    .carousel .texto {
+      max-width: 300px; }
+      .carousel .texto p {
+        max-width: 100%;
+        font-size: 5px;
+        box-sizing: border-box; }
+  .navbar-brand img {
+    margin: 0px; }
+  .box {
+    max-width: 300px; }
+    .box .box__img {
+      max-width: 300px;
+      margin: 0; }
+      .box .box__img img {
+        max-width: 100%; }
+    .box .box__info {
+      max-width: 100%; }
+  .inciensos__galeria {
+    max-width: 300px; }
+    .inciensos__galeria .imagen__incienso__fondo {
+      max-width: 300px;
+      height: 100%; }
+  .sahumadores__galeria {
+    max-width: 300px; }
+    .sahumadores__galeria .imagen__incienso__fondo {
+      max-width: 300px;
+      max-height: 100%; }
+  .galeria {
+    margin: 0px; }
+    .galeria .galeria__card {
+      margin-left: 30px;
+      max-width: 230px;
+      max-height: 330px; }
+      .galeria .galeria__card img {
+        max-width: 80%;
+        max-height: 50%; }
+  footer {
+    width: 100%; }
+  .anuncio p {
+    font-size: 12px; } }
